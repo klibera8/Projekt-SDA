@@ -393,7 +393,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"url": {
 					"raw": "https://api.trello.com/1/actions/{id}?key={{key}}&token={{token}}&name=Projekt SDA",
@@ -419,8 +419,7 @@
 						},
 						{
 							"key": "name",
-							"value": "Projekt SDA",
-							"type": "text"
+							"value": "Projekt SDA"
 						}
 					]
 				}
