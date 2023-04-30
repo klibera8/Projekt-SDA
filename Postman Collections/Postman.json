@@ -436,7 +436,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/boards/{id}/labels?name=Projekt&color=null&key={{key}}&token={{token}}",
+					"raw": "https://api.trello.com/1/boards/{id}/labels?name=Projekt&color=red&key={{key}}&token={{token}}",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -456,7 +456,7 @@
 						},
 						{
 							"key": "color",
-							"value": "null"
+							"value": "red"
 						},
 						{
 							"key": "key",
