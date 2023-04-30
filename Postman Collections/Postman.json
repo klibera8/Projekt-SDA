@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "2d4c3cc3-4758-4c19-90fc-59dd8fe9551d",
+		"name": "Trello API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateNewBoard",
+			"_postman_id": "9384eb3b-3d23-4d47-9f9f-6ac8e62671f6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=TApi&key=700616722bbc96a5032c9d711897e0c4&token=ATTA0fa32809df106f1c171832199f83a040005a378e71041a10b103620c1edefc4c10AB495A",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "TApi"
+						},
+						{
+							"key": "key",
+							"value": "700616722bbc96a5032c9d711897e0c4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0fa32809df106f1c171832199f83a040005a378e71041a10b103620c1edefc4c10AB495A"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewList",
+			"_postman_id": "12128c1b-1c62-45a4-94fb-1ce38e402c91",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=TApi&idBoard=644e3c0d6aedaf0498e922e6&key=700616722bbc96a5032c9d711897e0c4&token=ATTA0fa32809df106f1c171832199f83a040005a378e71041a10b103620c1edefc4c10AB495A",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "TApi"
+						},
+						{
+							"key": "idBoard",
+							"value": "644e3c0d6aedaf0498e922e6"
+						},
+						{
+							"key": "key",
+							"value": "700616722bbc96a5032c9d711897e0c4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0fa32809df106f1c171832199f83a040005a378e71041a10b103620c1edefc4c10AB495A"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewCard",
+			"_postman_id": "977ba23f-2167-4d47-9b49-0bb9a0186c96",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?key=700616722bbc96a5032c9d711897e0c4&token=ATTA0fa32809df106f1c171832199f83a040005a378e71041a10b103620c1edefc4c10AB495A&name=To Do&idBoard=644e3c0d6aedaf0498e922e6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "700616722bbc96a5032c9d711897e0c4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0fa32809df106f1c171832199f83a040005a378e71041a10b103620c1edefc4c10AB495A"
+						},
+						{
+							"key": "name",
+							"value": "To Do"
+						},
+						{
+							"key": "idBoard",
+							"value": "644e3c0d6aedaf0498e922e6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBoard",
+			"_postman_id": "287340ea-a8fb-4993-aa2b-b63ca2867b2b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/644e3c0d6aedaf0498e922e6?key={{key}}&token={{token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"644e3c0d6aedaf0498e922e6"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCheckList",
+			"_postman_id": "9e7d8328-c517-42b3-ad89-cd7db809948c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists?idCard=644e3da49ab45be7ae8cb819&key={{key}}&token={{token}}&Name=Lista kontrolna",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "idCard",
+							"value": "644e3da49ab45be7ae8cb819"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "Name",
+							"value": "Lista kontrolna"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewToDo",
+			"_postman_id": "99b65d2d-87cd-4540-9657-81056ef7f5ce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=To Do&key=700616722bbc96a5032c9d711897e0c4&token=ATTA0fa32809df106f1c171832199f83a040005a378e71041a10b103620c1edefc4c10AB495A",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "To Do"
+						},
+						{
+							"key": "key",
+							"value": "700616722bbc96a5032c9d711897e0c4"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0fa32809df106f1c171832199f83a040005a378e71041a10b103620c1edefc4c10AB495A"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewList",
+			"_postman_id": "ae4ce4af-a9d4-4311-89fa-d580255226dc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=Druga lista&idBoard=644e456a9c3dfb148ac00ce8&key={{key}}&token={{token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Druga lista"
+						},
+						{
+							"key": "idBoard",
+							"value": "644e456a9c3dfb148ac00ce8"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewListToDo",
+			"_postman_id": "890ba373-7380-4b8a-9f71-23eae3be6403",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=644e456a9c3dfb148ac00ce8&key={{key}}&token={{token}}&name=Druga kartka",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "644e456a9c3dfb148ac00ce8"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "Druga kartka",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewOrganization",
+			"_postman_id": "13937a59-adae-4161-b0ae-f7f118754d64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/organizations?displayName=Projekt SDA&key={{key}}&token={{token}}&desc=Pierwszy projekt testerski SDA&name=Projekt testerski",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"organizations"
+					],
+					"query": [
+						{
+							"key": "displayName",
+							"value": "Projekt SDA"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "desc",
+							"value": "Pierwszy projekt testerski SDA",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Projekt testerski",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
