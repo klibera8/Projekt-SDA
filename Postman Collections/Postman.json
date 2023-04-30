@@ -396,7 +396,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/actions/{id}?key=APIKey&token=APIToke",
+					"raw": "https://api.trello.com/1/actions/{id}?key={{key}}&token={{token}}&name=Projekt SDA",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -411,11 +411,16 @@
 					"query": [
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{key}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToke"
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "Projekt SDA",
+							"type": "text"
 						}
 					]
 				}
