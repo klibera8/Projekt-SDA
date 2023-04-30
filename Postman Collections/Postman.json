@@ -427,47 +427,14 @@
 			"response": []
 		},
 		{
-			"name": "CreateColor",
+			"name": "New Request",
 			"id": "349fd0c9-5150-4293-8221-b01902980f3d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://api.trello.com/1/boards/{id}/labels?name={name}&color={color}&key=APIKey&token=APIToken",
-					"protocol": "https",
-					"host": [
-						"api",
-						"trello",
-						"com"
-					],
-					"path": [
-						"1",
-						"boards",
-						"{id}",
-						"labels"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "{name}"
-						},
-						{
-							"key": "color",
-							"value": "{color}"
-						},
-						{
-							"key": "key",
-							"value": "APIKey"
-						},
-						{
-							"key": "token",
-							"value": "APIToken"
-						}
-					]
-				}
+				"header": []
 			},
 			"response": []
 		}
