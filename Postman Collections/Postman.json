@@ -433,7 +433,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [],
 				"url": {
 					"raw": "https://api.trello.com/1/boards/{id}/labels?name=Projekt&color=black&key={{key}}&token={{token}}",
